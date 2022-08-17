@@ -18,8 +18,12 @@ $$
 |X| \binom{N + |X| - 1}{N - 1}
 $$
 
+Thus, a model with 20 firms and 20 individual states will have more than a thousand billion states. Instead of using the traditional iteration, we will find an approximation to MPE by solving a tractable linear program.
+
 ## Outcome
 
-![](https://github.com/SteveVu2212/Approximate_Dynamic_Programming/blob/main/outcomes/investment%20function.png)
+For a fixed industry state, the value function first increases as a function of the firm's own state and then after individual state 4 it basically becomes flat. This is because the monopoly quantity for this model is between the capacities in individual states 3 and 4, so firms will never produce more than that.
 
 ![](https://github.com/SteveVu2212/Approximate_Dynamic_Programming/blob/main/outcomes/value%20function.png)
+
+![](https://github.com/SteveVu2212/Approximate_Dynamic_Programming/blob/main/outcomes/investment%20function.png)
